@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Force 19013 | FTC Robotics Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo placeholder -->
+                <div class="logo-graphic">
+                    G19
+                </div>
+                <div class="logo-text">
+                    <h1>G-Force <span>19013</span></h1>
+                    <p>FTC Robotics Team</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#intro">Intro</a></li>
+                    <li class="dropdown">
+                        <a href="#projects">Projects <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" id="ftc-game-link">FTC DECODE Game</a>
+                            <a href="#" id="score-calculator-link">Score Calculator</a>
+                        </div>
+                    </li>
+                    <li><a href="#about">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#resources">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Documentation</a>
+                            <a href="#">Tutorials</a>
+                            <a href="#">Downloads</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile">
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#intro">Intro</a></li>
+                        <li class="mobile-dropdown">
+                            <a href="#" id="mobile-projects-toggle">Projects <i class="fas fa-chevron-down"></i></a>
+                            <div class="mobile-dropdown-content" id="mobile-projects">
+                                <a href="#" class="mobile-game-link">FTC DECODE Game</a>
+                                <a href="#" class="mobile-calculator-link">Score Calculator</a>
+                            </div>
+                        </li>
+                        <li><a href="#about">About Us</a></li>
+                        <li class="mobile-dropdown">
+                            <a href="#" id="mobile-resources-toggle">Resources <i class="fas fa-chevron-down"></i></a>
+                            <div class="mobile-dropdown-content" id="mobile-resources">
+                                <a href="#">Documentation</a>
+                                <a href="#">Tutorials</a>
+                                <a href="#">Downloads</a>
+                                <a href="#">Blog</a>
+                            </div>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <div class="container main-layout">
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home">
+                <h2>Welcome to G-Force 19013</h2>
+                <p>We are a competitive FIRST Tech Challenge (FTC) robotics team from the Technology Innovation Hub. Our mission is to inspire young minds in STEM through robotics, coding, and engineering innovation.</p>
+                <p>Our team participates in regional and national FTC competitions, focusing on designing, building, and programming robots to complete specific challenges. We emphasize collaboration, problem-solving, and technical excellence.</p>
+            </section>
+
+            <!-- Intro Section -->
+            <section id="intro">
+                <h2>Interactive Introduction</h2>
+                <p>Hover over the cards below to learn more about our team and projects:</p>
+                
+                <div class="intro-container">
+                    <div class="intro-card" id="game-card">
+                        <h3>FTC DECODE Game</h3>
+                        <p>Interactive game simulation</p>
+                        <div class="reveal-content">
+                            <p>Experience our FTC game simulation that helps drivers practice and strategize for competitions.</p>
+                            <button class="open-game control-btn">Open Game</button>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-card" id="calculator-card">
+                        <h3>Score Calculator</h3>
+                        <p>Calculate match scores</p>
+                        <div class="reveal-content">
+                            <p>Use our calculator to determine potential match scores and optimize your game strategy.</p>
+                            <button class="open-calculator control-btn">Open Calculator</button>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-card">
+                        <h3>Our Mission</h3>
+                        <p>What drives us</p>
+                        <div class="reveal-content">
+                            <p>We aim to inspire the next generation of engineers and innovators through hands-on robotics experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="intro-card">
+                        <h3>Team Values</h3>
+                        <p>Our core principles</p>
+                        <div class="reveal-content">
+                            <p>Gracious Professionalism, Innovation, Collaboration, and Continuous Learning guide everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section id="about">
+                <h2>About Our Team</h2>
+                <div class="team-info">
+                    <p>G-Force 19013 was established in 2019 with the goal of making robotics accessible to all students in our community. Since our inception, we've grown from a small group of enthusiasts to a competitive team with multiple awards at regional tournaments.</p>
+                    <p>Our team consists of 15 dedicated high school students with diverse interests in mechanical engineering, software development, electrical systems, and strategic planning. We mentor younger students in our community through outreach programs and workshops.</p>
+                    <p>Each season, we design and build a new robot to compete in the annual FTC challenge. Our design process emphasizes iterative prototyping, testing, and refinement to create a reliable and high-performing robot.</p>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features">
+                <h2>Core Capabilities</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Robot Design</h3>
+                        <p>Advanced CAD modeling and precision manufacturing for competition-ready robots.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Software Development</h3>
+                        <p>Custom Java and Python programs for autonomous and teleoperated robot control.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Creative solutions to complex engineering challenges with real-world applications.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community Outreach</h3>
+                        <p>STEM education initiatives and mentorship programs for local schools.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- About Us Sidebar Widget -->
+                <div class="sidebar-widget">
+                    <h3>About G-Force 19013</h3>
+                    <p>We are a FIRST Tech Challenge robotics team dedicated to innovation, education, and competition excellence. Our team brings together students with diverse skills to design, build, and program competition robots.</p>
+                    <p>Each year, we tackle the new FTC game challenge, developing strategic solutions and pushing the boundaries of what's possible with robotics technology.</p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="sidebar-widget">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <p>ometecgforce@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+1 (555) 190-1313</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Technology Innovation Hub</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Highlight -->
+                    <div class="instagram-highlight">
+                        <div class="instagram-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <strong>Follow us on Instagram</strong>
+                            <p><a href="https://instagram.com/gforce_19013" target="_blank" class="instagram-link">@gforce_19013</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Follow Us -->
+                <div class="sidebar-widget">
+                    <h3>Follow Us</h3>
+                    <p>Stay updated with our latest projects, competitions, and achievements.</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://instagram.com/gforce_19013" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>G-Force 19013</h3>
+                    <p>An FTC robotics team dedicated to innovation, education, and competition excellence. We inspire the next generation of engineers and problem-solvers.</p>
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a href="https://instagram.com/gforce_19013" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope footer-icon"></i> omotecgforce@gmail.com</li>
+                        <li><i class="fas fa-phone footer-icon"></i> +1 (555) 190-1313</li>
+                        <li><i class="fas fa-map-marker-alt footer-icon"></i> Technology Innovation Hub</li>
+                        <li><i class="fab fa-instagram footer-icon"></i> @gforce_19013</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 G-Force 19013. All rights reserved. | FTC Robotics Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FTC Game Modal -->
+    <div class="modal" id="game-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">FTC DECODE Game</h2>
+                <span class="close-modal" id="close-game">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe class="game-container" id="game-frame"></iframe>
+                <div class="game-controls">
+                    <button class="control-btn" onclick="gameController.restartGame()">Restart Game</button>
+                    <button class="control-btn" onclick="gameController.fullscreenGame()">Fullscreen</button>
+                    <button class="control-btn" onclick="gameController.changeAllianceInGame()">Change Alliance</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Score Calculator Modal -->
+    <div class="modal" id="calculator-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">FTC Score Calculator</h2>
+                <span class="close-modal" id="close-calculator">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe class="calculator-container" id="calculator-frame"></iframe>
+                <div class="game-controls">
+                    <button class="control-btn" onclick="calculatorController.refreshCalculator()">Refresh Calculator</button>
+                    <button class="control-btn" onclick="calculatorController.openOfficialSite()">Open Official Site</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load game HTML separately -->
+    <script src="game.html.js" defer></script>
+</body>
+</html>
